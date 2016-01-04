@@ -13,7 +13,7 @@ zie [top 40]
 ## doel van de visualisatie
 Het doel van mijn visualisatie is het duidelijk weergeven van de top 40 data over verschillende periodes en het duidelijk weergeven van het verloop van een nummer van 1965-heden. Dit wil ik visualiseren op de volgende manier:
 ![](doc/hoofd.jpg)
-Het zal 3 lijsten met top 40 hits weergeven waarbij veranderingen met een kleur weergeven worden. Verder zal de simulatie de nummers die veranderen duidelijk laten zien. Je kan door rechtsonder een jaar een maand en eventueel een week in te vullen een periode selecteren en over die periode 5 weken vooruit en 5 weken achteruit gaan over de lijst. Dit geeft zo een redelijk overzicht van de nummers. De verandering kan zo goed gevolgd worden.
+Het zal 3 lijsten met top 40 hits weergeven waarbij veranderingen met een kleur weergeven worden. Verder zal de simulatie de nummers die veranderen duidelijk laten zien. Dit kan nog een probleem geven met programeren om dit uiteindelijk duidelijk genoeg maar ook snel genoeg te laten verlopen. Je kan door rechtsonder een jaar een maand en eventueel een week in te vullen een periode selecteren en over die periode 5 weken vooruit en 5 weken achteruit gaan over de lijst. Dit geeft zo een redelijk overzicht van de nummers. De verandering kan zo goed gevolgd worden.
 
 ----
 ## wanneer een nummer geselecteerd word
@@ -26,3 +26,5 @@ Deze pagina geeft een lijngrafiek met het verloop van het nummer van het begin i
 Als er in de hoofdpagina top lijst aangedrukt word zal er de volgende pagina geopend worden:
 ![](doc/topLijst.jpg)
 Deze pagina geeft de nummers met het hoogst aantal punten. Dit is een combinatie van het hoogst aantal punten en het langst in de top 40. 
+## eerdere ontwerpen
+Eerdere ontwerpen focussen zich alleen op het laten zien van de top 40 van 1 week met doormiddel van kleuren de nieuwe nummers,stijgers of dalers. Dit geeft ook een redelijk duidelijk overzicht maar is saai.
