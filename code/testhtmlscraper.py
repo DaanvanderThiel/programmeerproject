@@ -17,14 +17,13 @@ with open("alleUrls.csv", "r") as urls:
         dom = DOM(url.download(cached = True))
         # geeft de week
         i = 1
-        with io.open("allmusic.csv", "w",charset = "utf8") as f:
+        with io.open("allMusic.csv", "w",encoding = "utf8") as f:
             for week in dom.by_class("weeknr")[1:2]:
                 print week.content
             # de lijst van de top 40 selecteren
 
             for l in dom.by_tag("ol.top40")[:1]:
-                # per nummer selecteren
-
+                # per nummer selecteren=
                 for e in l.by_tag("div.clearfix")[0:40]:
                     muziekGegevens = ""
                     #positie in de top 40
@@ -48,9 +47,10 @@ with open("alleUrls.csv", "r") as urls:
                     # jaar van het nummer
                     for inner in e.by_tag("strong")[4:5]:
                         print inner.content.strip() , "4:5"
-                        muziekGegevens += inner.content + ","
+                        muziekGegevens += inner.content/.trip() + ","
                     h = HTMLParser.HTMLParser()
                     muziekGegevens = h.unescape(muziekGegevens)
-                    f.write(muziekGegevens)
+                    print muziekGegevens
+                    f.write(muziekGegevens + "\n")
 f.close
 urls.close
