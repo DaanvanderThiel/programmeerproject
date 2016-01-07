@@ -31,19 +31,25 @@ with open("alleUrls.csv", "r") as urls:
                     print i , 'positie'
                     i = i+1 # opletten met resetten
                     # de artiest selecteren
-                    # for artiest in e.by_class("credit"):
-                    #     #print artiest
+                    for artiest in e.by_class("credit"):
+                        muziekGegevens += artiest.content
+                    #positie
                     for inner in e.by_tag("strong")[1:2]:
-                        print inner , "1:2"
+                        print inner.content , "1:2"
+                        muziekGegevens += inner.content
+                    # hoogste notering
                     for inner in e.by_tag("strong")[2:3]:
-                        print inner , "2:3"
+                        print inner.content , "2:3"
+                    # aantal punten
                     for inner in e.by_tag("strong")[3:4]:
-                        print inner , "3:4"
+                        print inner.content , "3:4"
+                        muziekGegevens += inner.content
+                    # jaar van het nummer
                     for inner in e.by_tag("strong")[4:5]:
-                        print inner , "4:5"
-                    for inner in e.by_tag("strong")[5:6]:
-                        print inner , "5:6"
+                        print inner.content.strip() , "4:5"
+                        muziekGegevens += inner.content
                     h = HTMLParser.HTMLParser()
                     h.unescape(muziekGegevens)
+                    f.write(muziekGegevens)
 f.close
 urls.close
