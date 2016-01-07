@@ -1,2 +1,523 @@
-1,Justin Bieber,8,1,373,2015,
-2,Justin Bieber,4,2,222,2015,
+1,Justin Bieber,10,1,373,2015
+2,Justin Bieber,6,2,222,2015
+3,Adele,10,1,392,2015
+4,Robin Schulz (feat. Francesco Yates),14,4,419,2015
+5,Lukas Graham,5,5,158,2015
+6,Shawn Mendes,11,4,367,2015
+7,Major Lazer feat. Nyla & Fuse ODG,3,7,74,2015
+8,Zara Larsson,18,3,560,2015
+9,Coldplay,7,8,203,2015
+10,Diggy Dex ft. JW Roy,8,10,185,2015
+11,Zara Larsson & MNEK,8,9,182,2015
+12,Armin van Buuren feat. Kensington,8,12,192,2015
+13,Justin Bieber,18,1,639,2015
+14,Sigala,17,2,548,2015
+15,Charlie Puth feat. Meghan Trainor,10,11,206,2015
+16,Kygo feat. Maty Noyes,3,16,44,2015
+17,Ariana Grande,9,7,237,2015
+18,Mr Polska & Ronnie Flex,13,3,390,2015
+19,Sam Hunt,17,9,441,2015
+20,Drake,11,9,274,2015
+21,Coldplay,3,21,39,2015
+22,Ellie Goulding,14,8,366,2015
+23,XA,2,23,31,2015
+24,Naughty Boy featuring Beyoncé and Arrow Benjamin,13,14,275,2015
+25,Haevn,4,25,52,2015
+26,Lost Frequencies feat. Janieck Devy,25,3,730,2015
+27,Shaggy feat. Mohombi, Faydee, Costi,19,8,460,2015
+28,Calvin Harris + Disciples,23,1,716,2015
+29,Marco Borsato,10,14,202,2015
+30,Alessia Cara,3,30,27,2015
+31,Kensington,12,19,168,2015
+32,Shaun Frank & Kshmr ft. Delaney Jane,1,32,9,2016
+33,Eva Simons ft. Sidney Samson,4,33,19,2015
+34,The Weeknd,28,2,719,2015
+35,Hailee Steinfeld,9,26,111,2015
+36,R.City feat. Adam Levine,24,4,568,2015
+37,Mike Posner,1,37,4,2016
+38,Kygo feat. Ella Henderson,16,11,286,2015
+39,Miss Montreal,6,23,68,2015
+40,Years & Years,18,22,168,2015
+1,Justin Bieber,9,1,373,2015
+2,Justin Bieber,5,2,222,2015
+3,Adele,9,1,392,2015
+4,Robin Schulz (feat. Francesco Yates),13,4,419,2015
+5,Shawn Mendes,10,4,367,2015
+6,Lukas Graham,4,5,158,2015
+7,Zara Larsson,17,3,560,2015
+8,Coldplay,6,8,203,2015
+9,Zara Larsson & MNEK,7,9,182,2015
+10,Diggy Dex ft. JW Roy,7,10,185,2015
+11,Justin Bieber,17,1,639,2015
+12,Sigala,16,2,548,2015
+13,Charlie Puth feat. Meghan Trainor,9,11,206,2015
+14,Major Lazer feat. Nyla & Fuse ODG,2,7,74,2015
+15,Armin van Buuren feat. Kensington,7,12,192,2015
+16,Ariana Grande,8,7,237,2015
+17,Drake,10,9,274,2015
+18,Mr Polska & Ronnie Flex,12,3,390,2015
+19,Sam Hunt,16,9,441,2015
+20,Ellie Goulding,13,8,366,2015
+21,Naughty Boy featuring Beyoncé and Arrow Benjamin,12,14,275,2015
+22,Lost Frequencies feat. Janieck Devy,24,3,730,2015
+23,Calvin Harris + Disciples,22,1,716,2015
+24,Kygo feat. Maty Noyes,2,16,44,2015
+25,Shaggy feat. Mohombi, Faydee, Costi,18,8,460,2015
+26,Coldplay,2,21,39,2015
+27,Marco Borsato,9,14,202,2015
+28,XA,1,23,31,2015
+29,Haevn,3,25,52,2015
+30,Kensington,11,19,168,2015
+31,Hailee Steinfeld,8,26,111,2015
+32,Alessia Cara,2,30,27,2015
+33,The Weeknd,27,2,719,2015
+34,Miss Montreal,5,23,68,2015
+35,Eva Simons ft. Sidney Samson,3,33,19,2015
+36,R.City feat. Adam Levine,23,4,568,2015
+37,Kygo feat. Ella Henderson,15,11,286,2015
+38,Years & Years,17,22,168,2015
+39,James Bay,6,29,44,2015
+40,Jasmine Thompson,3,35,12,2015
+1,Justin Bieber,8,1,373,2015
+2,Justin Bieber,4,2,222,2015
+3,Adele,8,1,392,2015
+4,Robin Schulz (feat. Francesco Yates),12,4,419,2015
+5,Lukas Graham,3,5,158,2015
+6,Shawn Mendes,9,4,367,2015
+7,Zara Larsson,16,3,560,2015
+8,Coldplay,5,8,203,2015
+9,Justin Bieber,16,1,639,2015
+10,Sigala,15,2,548,2015
+11,Charlie Puth feat. Meghan Trainor,8,11,206,2015
+12,Zara Larsson & MNEK,6,9,182,2015
+13,Diggy Dex ft. JW Roy,6,10,185,2015
+14,Drake,9,9,274,2015
+15,Ariana Grande,7,7,237,2015
+16,Mr Polska & Ronnie Flex,11,3,390,2015
+17,Sam Hunt,15,9,441,2015
+18,Armin van Buuren feat. Kensington,6,12,192,2015
+19,Lost Frequencies feat. Janieck Devy,23,3,730,2015
+20,Ellie Goulding,12,8,366,2015
+21,Naughty Boy featuring Beyoncé and Arrow Benjamin,11,14,275,2015
+22,Calvin Harris + Disciples,21,1,716,2015
+23,Miss Montreal,4,23,68,2015
+24,Shaggy feat. Mohombi, Faydee, Costi,17,8,460,2015
+25,Haevn,2,25,52,2015
+26,Marco Borsato,8,14,202,2015
+27,Hailee Steinfeld,7,26,111,2015
+28,Major Lazer feat. Nyla & Fuse ODG,1,7,74,2015
+29,Kensington,10,19,168,2015
+30,The Weeknd,26,2,719,2015
+31,Years & Years,16,22,168,2015
+32,R.City feat. Adam Levine,22,4,568,2015
+33,James Bay,5,29,44,2015
+34,Alessia Cara,1,30,27,2015
+35,Jasmine Thompson,2,35,12,2015
+36,Kygo feat. Ella Henderson,14,11,286,2015
+37,Coldplay,1,21,39,2015
+38,Eva Simons ft. Sidney Samson,2,33,19,2015
+39,Kygo feat. Maty Noyes,1,16,44,2015
+40,Axwell & Ingrosso,20,6,452,2015
+1,Justin Bieber,7,1,373,2015
+2,Adele,7,1,392,2015
+3,Justin Bieber,3,2,222,2015
+4,Shawn Mendes,8,4,367,2015
+5,Robin Schulz (feat. Francesco Yates),11,4,419,2015
+6,Justin Bieber,15,1,639,2015
+7,Zara Larsson,15,3,560,2015
+8,Lukas Graham,2,5,158,2015
+9,Coldplay,4,8,203,2015
+10,Sigala,14,2,548,2015
+11,Drake,8,9,274,2015
+12,Ariana Grande,6,7,237,2015
+13,Charlie Puth feat. Meghan Trainor,7,11,206,2015
+14,Diggy Dex ft. JW Roy,5,10,185,2015
+15,Zara Larsson & MNEK,5,9,182,2015
+16,Mr Polska & Ronnie Flex,10,3,390,2015
+17,Sam Hunt,14,9,441,2015
+18,Lost Frequencies feat. Janieck Devy,22,3,730,2015
+19,Ellie Goulding,11,8,366,2015
+20,Calvin Harris + Disciples,20,1,716,2015
+21,Armin van Buuren feat. Kensington,5,12,192,2015
+22,Naughty Boy featuring Beyoncé and Arrow Benjamin,10,14,275,2015
+23,Shaggy feat. Mohombi, Faydee, Costi,16,8,460,2015
+24,Miss Montreal,3,23,68,2015
+25,Marco Borsato,7,14,202,2015
+26,Hailee Steinfeld,6,26,111,2015
+27,The Weeknd,25,2,719,2015
+28,R.City feat. Adam Levine,21,4,568,2015
+29,James Bay,4,29,44,2015
+30,Years & Years,15,22,168,2015
+31,Kygo feat. Ella Henderson,13,11,286,2015
+32,Kensington,9,19,168,2015
+33,Haevn,1,25,52,2015
+34,Axwell & Ingrosso,19,6,452,2015
+35,Nothing But Thieves,2,35,9,2015
+36,Jasmine Thompson,1,35,12,2015
+37,Dyna & Firstman & Lil Kleine & Bollebof,10,19,116,2015
+38,Felix Jaehn feat. Polina,4,30,29,2015
+39,Eva Simons ft. Sidney Samson,1,33,19,2015
+40,Omi,10,24,103,2015
+1,Justin Bieber,6,1,373,2015
+2,Adele,6,1,392,2015
+3,Justin Bieber,2,2,222,2015
+1,Adele,5,1,392,2015
+2,Justin Bieber,5,1,373,2015
+3,Justin Bieber,13,1,639,2015
+4,Shawn Mendes,6,4,367,2015
+5,Zara Larsson,13,3,560,2015
+6,Robin Schulz (feat. Francesco Yates),9,4,419,2015
+7,Ariana Grande,4,7,237,2015
+8,Mr Polska & Ronnie Flex,8,3,390,2015
+9,Sigala,12,2,548,2015
+10,Drake,6,9,274,2015
+11,Calvin Harris + Disciples,18,1,716,2015
+12,Justin Bieber,1,2,222,2015
+13,Lost Frequencies feat. Janieck Devy,20,3,730,2015
+14,Armin van Buuren feat. Kensington,3,12,192,2015
+15,Sam Hunt,12,9,441,2015
+16,Marco Borsato,5,14,202,2015
+17,Coldplay,2,8,203,2015
+18,Ellie Goulding,9,8,366,2015
+19,Shaggy feat. Mohombi, Faydee, Costi,14,8,460,2015
+1,Adele,4,1,392,2015
+2,Justin Bieber,4,1,373,2015
+3,Justin Bieber,12,1,639,2015
+4,Zara Larsson,12,3,560,2015
+5,Shawn Mendes,5,4,367,2015
+6,Sigala,11,2,548,2015
+7,Robin Schulz (feat. Francesco Yates),8,4,419,2015
+8,Mr Polska & Ronnie Flex,7,3,390,2015
+9,Calvin Harris + Disciples,17,1,716,2015
+10,Ariana Grande,3,7,237,2015
+11,Lost Frequencies feat. Janieck Devy,19,3,730,2015
+12,Drake,5,9,274,2015
+13,Sam Hunt,11,9,441,2015
+14,Ellie Goulding,8,8,366,2015
+15,Armin van Buuren feat. Kensington,2,12,192,2015
+16,Marco Borsato,4,14,202,2015
+17,Shaggy feat. Mohombi, Faydee, Costi,13,8,460,2015
+18,The Weeknd,22,2,719,2015
+19,R.City feat. Adam Levine,18,4,568,2015
+20,Naughty Boy featuring Beyoncé and Arrow Benjamin,7,14,275,2015
+21,Coldplay,1,8,203,2015
+22,Charlie Puth feat. Meghan Trainor,4,11,206,2015
+23,Kygo feat. Ella Henderson,10,11,286,2015
+24,Kensington,6,19,168,2015
+25,Diggy Dex ft. JW Roy,2,10,185,2015
+26,Years & Years,12,22,168,2015
+27,Axwell & Ingrosso,16,6,452,2015
+28,Hailee Steinfeld,3,26,111,2015
+29,Zara Larsson & MNEK,2,9,182,2015
+30,Felix Jaehn feat. Jasmine Thompson,27,1,872,2015
+31,One Direction,4,31,41,2015
+32,Omi,7,24,103,2015
+33,Dyna & Firstman & Lil Kleine & Bollebof,7,19,116,2015
+34,Felix Jaehn feat. Polina,1,30,29,2015
+35,Nicky Jam & Enrique Iglesias,24,1,693,2015
+36,James Bay,1,29,44,2015
+37,Anouk,9,16,145,2015
+38,Avicii,10,17,159,2015
+39,First Aid Kit,6,33,32,2015
+40,Madcon & Ray Dalton,25,3,583,2015
+1,
+1,Adele,1,1,392,2015
+2,Justin Bieber,9,1,639,2015
+3,Zara Larsson,9,3,560,2015
+4,Sigala,8,2,548,2015
+5,Mr Polska & Ronnie Flex,4,3,390,2015
+6,Calvin Harris + Disciples,14,1,716,2015
+7,Lost Frequencies feat. Janieck Devy,16,3,730,2015
+8,Ellie Goulding,5,8,366,2015
+9,Robin Schulz (feat. Francesco Yates),5,4,419,2015
+10,Sam Hunt,8,9,441,2015
+11,R.City feat. Adam Levine,15,4,568,2015
+12,Shawn Mendes,2,4,367,2015
+13,The Weeknd,19,2,719,2015
+14,Naughty Boy featuring Beyoncé and Arrow Benjamin,4,14,275,2015
+15,Shaggy feat. Mohombi, Faydee, Costi,10,8,460,2015
+16,Kygo feat. Ella Henderson,7,11,286,2015
+17,Axwell & Ingrosso,13,6,452,2015
+18,Marco Borsato,1,14,202,2015
+19,Felix Jaehn feat. Jasmine Thompson,24,1,872,2015
+20,Dyna & Firstman & Lil Kleine & Bollebof,4,19,116,2015
+21,Drake,2,9,274,2015
+22,Adam Lambert,23,6,647,2015
+23,Kensington,3,19,168,2015
+24,Justin Bieber,1,1,373,2015
+25,Anouk,6,16,145,2015
+26,Omi,4,24,103,2015
+27,Avicii,7,17,159,2015
+28,Nicky Jam & Enrique Iglesias,21,1,693,2015
+29,Years & Years,9,22,168,2015
+30,Alvaro Soler,15,12,320,2015
+31,Madcon & Ray Dalton,22,3,583,2015
+32,Sam Feldt,14,19,230,2015
+33,Dotan,6,31,43,2015
+34,First Aid Kit,3,33,32,2015
+35,Major Lazer x DJ Snake feat. Mø,33,1,1076,2015
+36,One Direction,12,15,217,2015
+37,One Direction,1,31,41,2015
+38,P!nk,2,37,9,2015
+39,Sam Smith,4,35,18,2015
+40,Charlie Puth feat. Meghan Trainor,1,11,206,2015
+1,Justin Bieber,8,1,639,2015
+2,Sigala,7,2,548,2015
+3,Mr Polska & Ronnie Flex,3,3,390,2015
+4,Zara Larsson,8,3,560,2015
+5,Calvin Harris + Disciples,13,1,716,2015
+6,Lost Frequencies feat. Janieck Devy,15,3,730,2015
+7,R.City feat. Adam Levine,14,4,568,2015
+8,Ellie Goulding,4,8,366,2015
+9,Sam Hunt,7,9,441,2015
+10,Robin Schulz (feat. Francesco Yates),4,4,419,2015
+11,The Weeknd,18,2,719,2015
+12,Shaggy feat. Mohombi, Faydee, Costi,9,8,460,2015
+13,Kygo feat. Ella Henderson,6,11,286,2015
+14,Naughty Boy featuring Beyoncé and Arrow Benjamin,3,14,275,2015
+15,Felix Jaehn feat. Jasmine Thompson,23,1,872,2015
+16,Axwell & Ingrosso,12,6,452,2015
+17,Adam Lambert,22,6,647,2015
+18,Nicky Jam & Enrique Iglesias,20,1,693,2015
+19,Dyna & Firstman & Lil Kleine & Bollebof,3,19,116,2015
+20,Avicii,6,17,159,2015
+21,Anouk,5,16,145,2015
+22,Madcon & Ray Dalton,21,3,583,2015
+23,Alvaro Soler,14,12,320,2015
+24,Sam Feldt,13,19,230,2015
+25,Kensington,2,19,168,2015
+26,Shawn Mendes,1,4,367,2015
+27,Omi,3,24,103,2015
+28,Major Lazer x DJ Snake feat. Mø,32,1,1076,2015
+29,One Direction,11,15,217,2015
+30,James Morrison,4,29,41,2015
+31,Dotan,5,31,43,2015
+32,Years & Years,8,22,168,2015
+33,First Aid Kit,2,33,32,2015
+34,Drake,1,9,274,2015
+35,Adam Lambert,2,35,11,2015
+36,Sam Smith,3,35,18,2015
+37,P!nk,1,37,9,2015
+38,Avicii,21,6,519,2015
+39,Silentó,12,17,160,2015
+40,Disclosure ft. Sam Smith,11,27,75,2015
+1,Justin Bieber,7,1,639,2015
+2,Calvin Harris + Disciples,12,1,716,2015
+3,Sigala,6,2,548,2015
+4,Zara Larsson,7,3,560,2015
+5,Lost Frequencies feat. Janieck Devy,14,3,730,2015
+6,R.City feat. Adam Levine,13,4,568,2015
+7,Mr Polska & Ronnie Flex,2,3,390,2015
+8,The Weeknd,17,2,719,2015
+9,Ellie Goulding,3,8,366,2015
+10,Sam Hunt,6,9,441,2015
+11,Shaggy feat. Mohombi, Faydee, Costi,8,8,460,2015
+12,Kygo feat. Ella Henderson,5,11,286,2015
+13,Felix Jaehn feat. Jasmine Thompson,22,1,872,2015
+14,Robin Schulz (feat. Francesco Yates),3,4,419,2015
+15,Axwell & Ingrosso,11,6,452,2015
+16,Nicky Jam & Enrique Iglesias,19,1,693,2015
+17,Naughty Boy featuring Beyoncé and Arrow Benjamin,2,14,275,2015
+18,Adam Lambert,21,6,647,2015
+19,Anouk,4,16,145,2015
+20,Avicii,5,17,159,2015
+21,Madcon & Ray Dalton,20,3,583,2015
+22,Alvaro Soler,13,12,320,2015
+23,Sam Feldt,12,19,230,2015
+24,One Direction,10,15,217,2015
+25,Dyna & Firstman & Lil Kleine & Bollebof,2,19,116,2015
+26,Avicii,20,6,519,2015
+27,Major Lazer x DJ Snake feat. Mø,31,1,1076,2015
+28,Omi,2,24,103,2015
+29,James Morrison,3,29,41,2015
+30,Disclosure ft. Sam Smith,10,27,75,2015
+31,Kensington,1,19,168,2015
+32,Silentó,11,17,160,2015
+33,Years & Years,7,22,168,2015
+34,First Aid Kit,1,33,32,2015
+35,Sam Smith,2,35,18,2015
+36,Adam Lambert,1,35,11,2015
+37,Dotan,4,31,43,2015
+38,Jack Ü with Justin Bieber,26,11,549,2015
+39,James Bay,22,18,406,2015
+40,Nico & Vinz feat. Kid Ink & Bebe Rexha,11,29,77,2015
+1,Justin Bieber,6,1,639,2015
+2,Calvin Harris + Disciples,11,1,716,2015
+3,Sigala,5,2,548,2015
+4,Lost Frequencies feat. Janieck Devy,13,3,730,2015
+5,R.City feat. Adam Levine,12,4,568,2015
+6,Zara Larsson,6,3,560,2015
+7,The Weeknd,16,2,719,2015
+8,Shaggy feat. Mohombi, Faydee, Costi,7,8,460,2015
+9,Felix Jaehn feat. Jasmine Thompson,21,1,872,2015
+10,Axwell & Ingrosso,10,6,452,2015
+11,Kygo feat. Ella Henderson,4,11,286,2015
+12,Ellie Goulding,2,8,366,2015
+13,Nicky Jam & Enrique Iglesias,18,1,693,2015
+14,Sam Hunt,5,9,441,2015
+15,Adam Lambert,20,6,647,2015
+16,Madcon & Ray Dalton,19,3,583,2015
+17,Avicii,4,17,159,2015
+18,Anouk,3,16,145,2015
+19,Naughty Boy featuring Beyoncé and Arrow Benjamin,1,14,275,2015
+20,Alvaro Soler,12,12,320,2015
+21,One Direction,9,15,217,2015
+22,Mr Polska & Ronnie Flex,1,3,390,2015
+23,Sam Feldt,11,19,230,2015
+24,Avicii,19,6,519,2015
+25,Robin Schulz (feat. Francesco Yates),2,4,419,2015
+26,Major Lazer x DJ Snake feat. Mø,30,1,1076,2015
+27,Disclosure ft. Sam Smith,9,27,75,2015
+28,Silentó,10,17,160,2015
+29,Jack Ü with Justin Bieber,25,11,549,2015
+30,James Morrison,2,29,41,2015
+31,Omi,1,24,103,2015
+32,Kygo feat. Parson James,28,3,836,2015
+33,Years & Years,6,22,168,2015
+34,Dyna & Firstman & Lil Kleine & Bollebof,1,19,116,2015
+35,James Bay,21,18,406,2015
+36,Thomas Jack,7,24,84,2015
+37,Sam Smith,1,35,18,2015
+38,Nico & Vinz feat. Kid Ink & Bebe Rexha,10,29,77,2015
+39,Dotan,3,31,43,2015
+40,Oliver Heldens & Shaun Frank (ft. Delaney Jane),5,30,41,2015
+1,Justin Bieber,5,1,639,2015
+2,Calvin Harris + Disciples,10,1,716,2015
+3,Lost Frequencies feat. Janieck Devy,12,3,730,2015
+4,R.City feat. Adam Levine,11,4,568,2015
+5,The Weeknd,15,2,719,2015
+6,Sigala,4,2,548,2015
+7,Felix Jaehn feat. Jasmine Thompson,20,1,872,2015
+8,Axwell & Ingrosso,9,6,452,2015
+9,Shaggy feat. Mohombi, Faydee, Costi,6,8,460,2015
+10,Nicky Jam & Enrique Iglesias,17,1,693,2015
+11,Zara Larsson,5,3,560,2015
+12,Adam Lambert,19,6,647,2015
+13,Kygo feat. Ella Henderson,3,11,286,2015
+14,Sam Hunt,4,9,441,2015
+15,Madcon & Ray Dalton,18,3,583,2015
+16,Anouk,2,16,145,2015
+17,Avicii,3,17,159,2015
+18,Alvaro Soler,11,12,320,2015
+19,Ellie Goulding,1,8,366,2015
+20,Major Lazer x DJ Snake feat. Mø,29,1,1076,2015
+21,One Direction,8,15,217,2015
+22,Sam Feldt,10,19,230,2015
+23,Avicii,18,6,519,2015
+24,Jack Ü with Justin Bieber,24,11,549,2015
+25,Silentó,9,17,160,2015
+26,Kygo feat. Parson James,27,3,836,2015
+27,Disclosure ft. Sam Smith,8,27,75,2015
+28,Thomas Jack,6,24,84,2015
+29,James Bay,20,18,406,2015
+30,Years & Years,5,22,168,2015
+31,Nico & Vinz feat. Kid Ink & Bebe Rexha,9,29,77,2015
+32,Dotan,2,31,43,2015
+33,Oliver Heldens & Shaun Frank (ft. Delaney Jane),4,30,41,2015
+34,James Morrison,1,29,41,2015
+35,Pitbull ft. Chris Brown,16,9,335,2015
+36,David Guetta feat. Nicki Minaj, Bebe Rexha & Afrojack,20,12,375,2015
+37,Fifth Harmony ft. Kid Ink,16,25,183,2015
+38,Robin Schulz (feat. Francesco Yates),1,4,419,2015
+39,Afrojack ft. Mike Taylor,13,13,239,2015
+40,Kensington,22,23,244,2015
+1,Justin Bieber,4,1,639,2015
+2,Calvin Harris + Disciples,9,1,716,2015
+3,The Weeknd,14,2,719,2015
+4,Lost Frequencies feat. Janieck Devy,11,3,730,2015
+5,R.City feat. Adam Levine,10,4,568,2015
+6,Felix Jaehn feat. Jasmine Thompson,19,1,872,2015
+7,Axwell & Ingrosso,8,6,452,2015
+8,Nicky Jam & Enrique Iglesias,16,1,693,2015
+9,Shaggy feat. Mohombi, Faydee, Costi,5,8,460,2015
+10,Adam Lambert,18,6,647,2015
+11,Sigala,3,2,548,2015
+12,Madcon & Ray Dalton,17,3,583,2015
+13,Zara Larsson,4,3,560,2015
+14,Alvaro Soler,10,12,320,2015
+15,Major Lazer x DJ Snake feat. Mø,28,1,1076,2015
+16,Sam Hunt,3,9,441,2015
+17,Avicii,17,6,519,2015
+18,One Direction,7,15,217,2015
+19,Kygo feat. Ella Henderson,2,11,286,2015
+20,Jack Ü with Justin Bieber,23,11,549,2015
+21,Sam Feldt,9,19,230,2015
+22,Anouk,1,16,145,2015
+23,Avicii,2,17,159,2015
+24,Silentó,8,17,160,2015
+25,Kygo feat. Parson James,26,3,836,2015
+26,James Bay,19,18,406,2015
+27,Afrojack ft. Mike Taylor,12,13,239,2015
+28,Thomas Jack,5,24,84,2015
+29,Pitbull ft. Chris Brown,15,9,335,2015
+30,Oliver Heldens & Shaun Frank (ft. Delaney Jane),3,30,41,2015
+31,Fifth Harmony ft. Kid Ink,15,25,183,2015
+32,Disclosure ft. Sam Smith,7,27,75,2015
+33,Nico & Vinz feat. Kid Ink & Bebe Rexha,8,29,77,2015
+34,David Guetta feat. Nicki Minaj, Bebe Rexha & Afrojack,19,12,375,2015
+35,Macklemore & Ryan Lewis feat. Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz,2,35,10,2015
+36,Pharrell Williams,11,16,191,2015
+37,Kensington,21,23,244,2015
+38,Years & Years,4,22,168,2015
+39,Dotan,1,31,43,2015
+40,Eva Simons,20,10,392,2015
+1,Justin Bieber,3,1,639,2015
+2,Calvin Harris + Disciples,8,1,716,2015
+3,The Weeknd,13,2,719,2015
+4,Felix Jaehn feat. Jasmine Thompson,18,1,872,2015
+5,Nicky Jam & Enrique Iglesias,15,1,693,2015
+6,Axwell & Ingrosso,7,6,452,2015
+7,R.City feat. Adam Levine,9,4,568,2015
+8,Lost Frequencies feat. Janieck Devy,10,3,730,2015
+9,Adam Lambert,17,6,647,2015
+10,Shaggy feat. Mohombi, Faydee, Costi,4,8,460,2015
+11,Madcon & Ray Dalton,16,3,583,2015
+12,Alvaro Soler,9,12,320,2015
+13,Major Lazer x DJ Snake feat. Mø,27,1,1076,2015
+14,Avicii,16,6,519,2015
+15,Sigala,2,2,548,2015
+16,Jack Ü with Justin Bieber,22,11,549,2015
+17,One Direction,6,15,217,2015
+18,Sam Hunt,2,9,441,2015
+19,Kygo feat. Parson James,25,3,836,2015
+20,Zara Larsson,3,3,560,2015
+21,Sam Feldt,8,19,230,2015
+22,Afrojack ft. Mike Taylor,11,13,239,2015
+23,Silentó,7,17,160,2015
+24,Kygo feat. Ella Henderson,1,11,286,2015
+25,James Bay,18,18,406,2015
+26,Avicii,1,17,159,2015
+27,Pitbull ft. Chris Brown,14,9,335,2015
+28,Thomas Jack,4,24,84,2015
+29,Fifth Harmony ft. Kid Ink,14,25,183,2015
+30,Oliver Heldens & Shaun Frank (ft. Delaney Jane),2,30,41,2015
+31,David Guetta feat. Nicki Minaj, Bebe Rexha & Afrojack,18,12,375,2015
+32,Nico & Vinz feat. Kid Ink & Bebe Rexha,7,29,77,2015
+33,Years & Years,3,22,168,2015
+34,Pharrell Williams,10,16,191,2015
+35,Kensington,20,23,244,2015
+36,Disclosure ft. Sam Smith,6,27,75,2015
+37,Macklemore & Ryan Lewis feat. Eric Nally, Melle Mel, Kool Moe Dee & Grandmaster Caz,1,35,10,2015
+38,Sharon Doorson,5,35,21,2015
+39,Eva Simons,19,10,392,2015
+40,Jason Derulo,26,6,574,2015
+1,Calvin Harris + Disciples,7,1,716,2015
+2,The Weeknd,12,2,719,2015
+3,Felix Jaehn feat. Jasmine Thompson,17,1,872,2015
+4,Justin Bieber,2,1,639,2015
+5,Nicky Jam & Enrique Iglesias,14,1,693,2015
+6,R.City feat. Adam Levine,8,4,568,2015
+7,Axwell & Ingrosso,6,6,452,2015
+8,Lost Frequencies feat. Janieck Devy,9,3,730,2015
+9,Adam Lambert,16,6,647,2015
+10,Madcon & Ray Dalton,15,3,583,2015
+11,Avicii,15,6,519,2015
+12,Alvaro Soler,8,12,320,2015
+13,Major Lazer x DJ Snake feat. Mø,26,1,1076,2015
+14,Shaggy feat. Mohombi, Faydee, Costi,
+1,Calvin Harris + Disciples,6,1,716,2015
+2,The Weeknd,11,2,719,2015
+3,Felix Jaehn feat. Jasmine Thompson,16,1,872,2015
+4,Nicky Jam & Enrique Iglesias,13,1,693,2015
+5,Lost Frequencies feat. Janieck Devy,8,3,730,2015
+6,Axwell & Ingrosso,

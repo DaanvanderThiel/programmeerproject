@@ -5,21 +5,30 @@ import csv
 import codecs
 import cStringIO
 import errno
+def whatisthis(s):
+    if isinstance(s, str):
+        return False
+    elif isinstance(s, unicode):
+        return True
 
 # Third party library imports:
 import pattern
 from pattern.web import URL, DOM
 import HTMLParser
 from pattern.web import abs
-with open("alleUrls.csv", "r") as urls:
-    for url in urls:
-        url = URL(url)
-        dom = DOM(url.download(cached = True))
-        # geeft de week
-        i = 1
-        with io.open("allMusic.csv", "w",encoding = "utf8") as f:
-            for week in dom.by_class("weeknr")[1:2]:
-                print week.content
+with io.open("allMusic.csv", "w",encoding = "utf8") as f:
+    with open("alleUrls.csv", "r") as urls:
+        for url in urls:
+            print url
+            week = url.split("/")
+            week = week[-1]
+            url = URL(url)
+            dom = DOM(url.download(cached = True))
+
+            # geeft de week
+            i = 1
+
+
             # de lijst van de top 40 selecteren
 
             for l in dom.by_tag("ol.top40")[:1]:
@@ -29,7 +38,7 @@ with open("alleUrls.csv", "r") as urls:
                     #positie in de top 40
                     muziekGegevens += str(i) + ","
                     print i , 'positie'
-                    i = i+1 # opletten met resetten
+                    i += 1 # opletten met resetten
                     # de artiest selecteren
                     for artiest in e.by_class("credit"):
                         muziekGegevens += artiest.content + ","
@@ -48,10 +57,24 @@ with open("alleUrls.csv", "r") as urls:
                     # jaar van het nummer
                     for inner in e.by_tag("strong")[4:5]:
                         print inner.content.strip() , "4:5"
-                        muziekGegevens += inner.content.strip() + ","
+                        muziekGegevens += inner.content.strip()
                     h = HTMLParser.HTMLParser()
                     muziekGegevens = h.unescape(muziekGegevens)
-                    print muziekGegevens
-                    f.write(muziekGegevens + "\n")
+
+                    if whatisthis(muziekGegevens) == False:
+                        muziekGegevens = unicode(muziekGegevens, "utf-8")
+                        print 'lajdsflkejwflejwfoiewjfwjfldskjfoewijf'
+                        f.write(muziekGegevens + "\n")
+                    else:
+                        f.write(muziekGegevens + "\n")
+
+
+#                     1 positie
+# week-45
+# ,1,
+# Traceback (most recent call last):
+#   File "testhtmlscraper.py", line 58, in <module>
+#     f.write(muziekGegevens + "\n")
+# TypeError: must be unicode, not str ???
 f.close
 urls.close
