@@ -27,6 +27,7 @@ with open("alleUrls.csv", "r") as urls:
                 for e in l.by_tag("div.clearfix")[0:40]:
                     muziekGegevens = ""
                     #positie in de top 40
+                    muziekGegevens += str(i) + ","
                     print i , 'positie'
                     i = i+1 # opletten met resetten
                     # de artiest selecteren
@@ -47,7 +48,7 @@ with open("alleUrls.csv", "r") as urls:
                     # jaar van het nummer
                     for inner in e.by_tag("strong")[4:5]:
                         print inner.content.strip() , "4:5"
-                        muziekGegevens += inner.content/.trip() + ","
+                        muziekGegevens += inner.content.strip() + ","
                     h = HTMLParser.HTMLParser()
                     muziekGegevens = h.unescape(muziekGegevens)
                     print muziekGegevens
