@@ -33,6 +33,7 @@ with io.open("allMusic.csv", "w",encoding = "utf8") as f:
 
             for l in dom.by_tag("ol.top40")[:1]:
                 # per nummer selecteren=
+                print "lijst top 40"
                 for e in l.by_tag("div.clearfix")[0:40]:
                     muziekGegevens = ""
                     #positie in de top 40
@@ -61,7 +62,7 @@ with io.open("allMusic.csv", "w",encoding = "utf8") as f:
                     h = HTMLParser.HTMLParser()
                     muziekGegevens = h.unescape(muziekGegevens)
 
-                    if whatisthis(muziekGegevens) == False:
+                    if not whatisthis(muziekGegevens):
                         muziekGegevens = unicode(muziekGegevens, "utf-8")
                         print 'lajdsflkejwflejwfoiewjfwjfldskjfoewijf'
                         f.write(muziekGegevens + "\n")
