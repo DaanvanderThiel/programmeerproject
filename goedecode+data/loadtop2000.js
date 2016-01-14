@@ -62,7 +62,7 @@ window.onload = function() {
         .attr('y', function(d)  { return (d.positie * 20) } )
         .attr('width', WIDTHBLOCK)
         .attr('height', HEIGHTBLOCK)
-        .attr('fill', 'gray')
+        .attr('fill', function(d){return kleurBlock(d.nummer,d.artiest,d.positie,d.jaartal)})
         .attr('class', 'rectLabel')
         .text(function(d) { return d.nummer })
         .on('mouseover', function(d) {
@@ -93,18 +93,28 @@ function creatLine(path,nummer,artiest){
   for( var u= 0; u<DATADICT.length; u++){
     if (DATADICT[u].nummer == nummer && DATADICT[u].artiest == artiest){
   for (var i = 0; i < 17; i++) {
+    if (!isNumeric(DATADICT[u].posities[i])){
+    lineData = []
+  }
     if (isNumeric(DATADICT[u].posities[i])){
     lineData.push({
       x: ((i+ 1) * 65 + WIDTHBLOCK),
       y: ((DATADICT[u].posities[i]) * 20 + HEIGHTBLOCK)
     })
+    tekenLine(path,lineData)
       }
     if (isNumeric(DATADICT[u].posities[i+1]) && i+1 < 17){
     lineData.push({
       x: ((i+1) * 65 + WIDTHBLOCK +15),
       y:  ((DATADICT[u].posities[i+1]) * 20 + HEIGHTBLOCK)
     })
+    tekenLine(path,lineData)
   }
+}
+}
+}
+}
+  function tekenLine(path,lineData){
   var line = d3.svg.line()
       .x(function(d){return d.x;})
       .y(function(d){return d.y;})
@@ -124,14 +134,21 @@ function creatLine(path,nummer,artiest){
           .attr("font-size", "48px")
           .style("fill", "red")
           // aanpassen!!
-  }
+
 }
-}
-}
-function kleurBlock(nummer,artiest,positie){
+function kleurBlock(nummer,artiest,positie,jaartal){
+  q = jaartal - 1999
   for( var u= 0; u<DATADICT.length; u++){
     if (DATADICT[u].nummer == nummer && DATADICT[u].artiest == artiest){
-        if
+      if (q > 0 && !isNumeric(DATADICT[u].posities[q-1])){
+        return "green"
+      }
+        else if (!isNumeric(DATADICT[u].posities[q+1]) && q != 16){
+          return "red"
+      }
+        else {
+          return "grey"
+        }
       }
   }
 }
