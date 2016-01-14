@@ -12,7 +12,13 @@
   </head>
 
   <body>
-
+    <audio id="audioElement" src="rickastley_artists.mp3"></audio>
+    <div>
+      <div onclick="document.getElementById('audioElement').play()"></div>
+      <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
+      <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
+      <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
+    </div>
 
     </script>
   </body>
