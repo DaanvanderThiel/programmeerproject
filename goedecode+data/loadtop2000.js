@@ -1,10 +1,12 @@
 breedteblokje = 10
 hoogteblockje = 0.19
 afstandtussenblokje = 0.04
+console.log("search")
 window.onload = function() {
+
   var DATADICT = []
   var allYear = []
-  HEIGHT = 12020
+  HEIGHT = 12040
   WIDTH = 400
   WIDTHBLOCK = 20
   HEIGHTBLOCK = 4
@@ -12,7 +14,11 @@ window.onload = function() {
   breedteblokje = 10
   hoogteblockje = 0.19
   afstandtussenblokje = 0.04
-
+  function completeAndRedirect() {
+    console.log("sljf")
+    return "france"
+}
+  //console.log(document.getElementById("searchfield").innerHTML)
   d3.select("body").append("div").attr("class","slider").style("position","fixed").style("top", "100px").style("left", "400px")
   var svgslider = d3.select(".slider")
                           .append("svg")
@@ -121,14 +127,14 @@ window.onload = function() {
 
         .on('mouseover', function(d) {
           d3.select(".p2").html(d.artiest + ":" + d.nummer);
-          svg.append("text")
-            //.attr("y", "30")
-            //.attr("x", "410")
-            .attr("class", "hover")
-            // .attr("font-family", "sans-serif")
-            // .attr("font-size", "25px")
-            // .attr("align","center")
-            .text (d.artiest + ":" + d.nummer);
+          // svg.append("text")
+          //   //.attr("y", "30")
+          //   //.attr("x", "410")
+          //   .attr("class", "hover")
+          //   // .attr("font-family", "sans-serif")
+          //   // .attr("font-size", "25px")
+          //   // .attr("align","center")
+          //   .text (d.artiest + ":" + d.nummer);
             creatLine("path",d.nummer,d.artiest,WIDTHBLOCK,HEIGHTBLOCK,AFSTANDTUSSENBLOCK)
             creatLine("path",d.nummer,d.artiest,breedteblokje,hoogteblockje,afstandtussenblokje)
 
@@ -136,6 +142,8 @@ window.onload = function() {
         .on("click", function(d) {
           creatLine("clickLine",d.nummer,d.artiest,WIDTHBLOCK,HEIGHTBLOCK,AFSTANDTUSSENBLOCK)
           creatLine("clickLine",d.nummer,d.artiest,breedteblokje,hoogteblockje,afstandtussenblokje)
+          d3.select("body").append("div").attr("class","clickShow").style("position","fixed").style("top", "150px").style("left", "650px")
+          d3.select(".clickShow").html(d.artiest + ":" + d.nummer);
          })
         .on("mouseout", function(d) {
             svg.selectAll(".hover").remove();
@@ -187,14 +195,14 @@ function creatLine(path,nummer,artiest,breedteBlok,hoogteBlok,afstandTussenBlok)
       .style("stroke-width", 2)
           .style("stroke", "black")
           .style("fill", "none");
-  svg.append("text")
-          // .attr("y", "50")
-          // .attr("x", "80")
-          .classed(path, true)
-          // .attr("font-family", "sans-serif")
-          // .attr("font-size", "48px")
-          // .style("fill", "red")
-          // aanpassen!!
+  // svg.append("text")
+  //         // .attr("y", "50")
+  //         // .attr("x", "80")
+  //         .classed(path, true)
+  //         // .attr("font-family", "sans-serif")
+  //         // .attr("font-size", "48px")
+  //         // .style("fill", "red")
+  //         // aanpassen!!
         }
   else{
     console.log(lineData)
@@ -205,14 +213,14 @@ function creatLine(path,nummer,artiest,breedteBlok,hoogteBlok,afstandTussenBlok)
         .style("stroke-width", 1)
             .style("stroke", "black")
             .style("fill", "none");
-    svgslider.append("text")
-            // .attr("y", "50")
-            // .attr("x", "80")
-            .classed(path, true)
-            // .attr("font-family", "sans-serif")
-            // .attr("font-size", "48px")
-            // .style("fill", "red")
-            // aanpassen!!
+    // svgslider.append("text")
+    //         // .attr("y", "50")
+    //         // .attr("x", "80")
+    //         .classed(path, true)
+    //         // .attr("font-family", "sans-serif")
+    //         // .attr("font-size", "48px")
+    //         // .style("fill", "red")
+    //         // aanpassen!!
   }
 
 }

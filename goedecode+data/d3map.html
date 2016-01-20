@@ -37,11 +37,17 @@
           <a class="navbar-brand" href="#">Npo 2 top 2000</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
+
+
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+          <form name=form onsubmit="return validateFormOnSubmit(this)" enctype="multipart/form-data" action="javascript:loadtop2000.validateFormOnSubmit(this)" method="post">
+            <input id="search" type="text" placeholder="your search">
+            <input id="submit" type="submit" value="Search">
+          </form>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
