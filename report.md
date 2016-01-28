@@ -1,2 +1,14 @@
 ### final report
-Mijn visualisatie laat de top 2000 van de npo 2 over alle jaren(1999-2015 zien).
+## top 2000
+Mijn visualisatie laat de top 2000 van de npo 2 over alle jaren(1999-2015 zien). het weergeeft een kolom met rechthoeken waarbij elke rechthoek een nummer voorstelt en elke kolom het jaar. Als er over een rechthoek bewogen word zal er een lijn ontstaaan met het verloop van het nummer. Op het moment dat er op een rechthoek gedrukt word zal de lijn getekend blijven en zal er rechts van het kleine figuur de titel en artiest met de kleur te zien zijn. Zo kan er goed nummers met elkaar vergeleken worden. Ook is er een kleinere kaart naast mijn hoofd visualisatie die meewbeweegt. Hierdoor kan er beter het overzicht gehouden worden op het moment dat er nummers erg veel verschillen per jaar! Ook is er een zoekfunctie en kan er op buttons gedrukt worden voor info en voor opvallende stukken uit de data.
+## Design keuze
+# top 40
+Ik heb in de eerste week geprobeerd de top 40 te scrapen. Ik kon hier een gehele pagina scrapen alleen als ik een hoop pagina's achter elkaar wou scrapen kreeg ik een error waarna het script stopte. Hierdoor werd het heel lastig om alles te scrapen. Dus daarom ben ik overgegaan op een geheel nieuw design. In dit design visualiseer ik de top 2000 van de npo2. 
+
+Ik heb voor een kleine map gekozen met een grote map aangezien dit duidelijk overzicht geeft en beter het verloop van een nummer laat zien. Ook kan hierdoor beter vergeleken worden op het moment dat een nummer bijv. 1000 plaatsen verschild. Voor de lijn heb ik de keuze gemaakt om de lijn op het eind van de rechthoek te laten beginnen en in de visualisatie bij 2015 aan het eind van de rechtoek te laten eindigen. Dit omdat het zo duidelijk laat zien dat 1999 het begin is en dat de lijn nog verder kan lopen na 2015.
+
+Wat vooral lastig is om goed te krijgen is de kleuren aangezien kleuren niet op de standaard zwarte lijn mogen lijken maar ook niet te licht mogen worden zodat ze amper zichtbaar zijn en ook mogen er niet dezelfde kleuren voorkomen. Dit heb ik geprobeerd op te lossen door een randomfunctie te gebruiken voor de 3 elementen van rgb(). Dit lost het probleem aardig op ookal kunnen kleuren nog redelijk op elkaar lijken.
+
+Voor het story telling aspect had ik eerst een andere pagina in gedachte maar aangezien de visualisatie dan opnieuw moet laden leek me dit niet handig. Daarom heb ik een button aangemaakt die een kleine animatie laat zien waarna er tekst is de visualisatie blijft wel grotendeels zichtbaar. Hierna kan er naast het tekstvlak gedrukt worden zodat de visualisatie volledig zichtbaar en werkend is. 
+
+Gedurende de periode heb ik geprobeerd een zoekfunctie te maken. Dit was uiteindelijk redelijk omslachtig aangezien er al een goede zoekfucntie bestaat en dit makkelijk geimporteerd kan worden... Dus daarom heb ik typeahead gebruikt wat het heel makkelijk maakt om nummers of artiesten te vinden.
