@@ -7,7 +7,7 @@ window.onload = function() {
   var allYear = []
   var nummers2 = []
   var nummers = [];
-  HEIGHT = 12040
+  HEIGHT = 12070
   WIDTH = 400
   WIDTHBLOCK = 20
   HEIGHTBLOCK = 4
@@ -17,17 +17,45 @@ window.onload = function() {
   afstandTussenBlok = 0.04
 
   //console.log(document.getElementById("searchfield").innerHTML)
-
+  // maak div voor de slider
   d3.select("body").append("div").attr("class", "slider").style("position", "fixed").style("top", "100px").style("left", "400px")
+  // maak div voor de legenda
+  d3.select("body").append("div").attr("class", "legenda").style("position", "fixed").style("top", "50px").style("left", "400px")
     //tabel
   d3.select("body").append("ul").attr("class", "tabel").style("position", "fixed").style("top", "100px").style("left", "560px")
-
+  // maak de legenda
+  var legenda = d3.select(".legenda")
+    .append("svg")
+    .attr("width", "600")
+    .attr("height","50")
+    legenda.append("rect")
+                          .attr("x", 300)
+                          .attr("y", 15)
+                          .attr("width", WIDTHBLOCK)
+                          .attr("height", HEIGHTBLOCK)
+                          .attr("fill","Green");
+    legenda.append("rect")
+                        .attr("x", 10)
+                        .attr("y", 15)
+                        .attr("width", WIDTHBLOCK)
+                        .attr("height", HEIGHTBLOCK)
+                        .attr("fill","red");
+  legenda.append("text")
+                    .text("Nummer kwam het vorige jaar niet voor")
+                    .attr("x", 325)
+                    .attr("y", 22)
+  legenda.append("text")
+                    .text("Nummer komt het volgende jaar niet terug")
+                    .attr("x", 35)
+                    .attr("y", 22)
+  // maak slider aan
   var svgslider = d3.select(".slider")
     .append("svg")
     .attr("width", "600")
     .attr("height", "500")
     .attr("border", 1)
     .attr("class", "slidersvg");
+    // zet er een lijn omheen
   var borderPath = svgslider.append("rect")
     .attr("x", 0)
     .attr("y", 0)
@@ -37,8 +65,9 @@ window.onload = function() {
     .style("fill", "none")
     .style("stroke-width", 1);
 
-  d3.select("body").append("h4").html("beweeg de muis over de rechthoeken voor de artiest en het nummer").attr("class", "p2").style("padding-top", "40px")
-  d3.select(".p2").style("position", "fixed").style("top", "30px").style("left", "400px")
+  d3.select("body").append("h4").html("beweeg de muis over de rechthoeken voor de artiest en het nummer").attr("class", "p2")
+  d3.select(".p2").style("position", "fixed").style("top", "70px").style("left", "400px")
+  // laad de data in
   d3.json("json2000.json", function(data) {
     var data = data.map(function(d) {
       DATADICT.push({
@@ -52,11 +81,8 @@ window.onload = function() {
       nummerArtiest = d[0] + ":" + d[1]
       nummers2.push(d[0])
       nummers2.push(nummerArtiest)
-
-        //console.log(DATADICT)
     });
     //http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array
-
     $.each(nummers2, function(i, el){
     if($.inArray(el, nummers) === -1) nummers.push(el);
     });
@@ -65,6 +91,7 @@ window.onload = function() {
       .attr("width", WIDTH)
       .attr("height", HEIGHT)
       .attr("border", 1)
+      .style("postion","relative")
       .attr("transform", "translate(0,55)");
     // zet alle posities neer
     nummer = 0
@@ -76,19 +103,10 @@ window.onload = function() {
         .attr("class", "positie")
         .attr("font-family", "sans-serif")
         .attr("font-size", "4px")
-        .style("position", "absolute")
         .style("fill", "black")
         .text(nummer)
     }
 
-    var borderPath = svg.append("rect")
-      .attr("x", 0)
-      .attr("y", 0)
-      .attr("height", HEIGHT)
-      .attr("width", WIDTH)
-      .style("stroke", "black")
-      .style("fill", "none")
-      .style("stroke-width", 1);
 
     function isNumeric(n) {
       return !isNaN(parseFloat(n)) && isFinite(n);
@@ -248,6 +266,7 @@ window.onload = function() {
           .attr('class', 'rectLabel')
 
         // zoek functie
+        // https://github.com/twitter/typeahead.js
         var substringMatcher = function(strs) {
           return function findMatches(q, cb) {
             var matches, substringRegex;
@@ -289,7 +308,6 @@ window.onload = function() {
       }
 
   window.verwijderLijnen = function(){
-    console.log("verwijderLijnen")
     svg.selectAll(".clickLine").remove()
     svgslider.selectAll(".clickLine").remove()
     d3.select(".tabel").selectAll("li").remove()
@@ -307,12 +325,11 @@ window.onload = function() {
       for (var i = 0; i < 17; i++) {
         nummer += 1
         svgjaartal.append("text")
-          .attr("y", "4")
+          .attr("y", "7")
           .attr("x", i * (WIDTHBLOCK + AFSTANDTUSSENBLOCK) + 24)
           .attr("class", "positie")
           .attr("font-family", "sans-serif")
           .attr("font-size", "4px")
-          .style("position", "fixed") // WERKT NIET ?? APARTE DIV AANMAKEN
           .style("fill", "black")
           .text(nummer);
       }

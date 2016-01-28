@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <head>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,21 +27,43 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm"style = "margin-left:1000px; margin-top:200px; width: 140px; position: fixed;">veranderingen</button>
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      in de eerste jaren blbal
+    </div>
+  </div>
+</div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"style = "margin-left:1000px; margin-top:100px; width: 140px; position: fixed;">info</button>
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          de top 2000 is een lijst met nummers bla bla
+            </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".be-example-modal-lg"style = "margin-left:1000px; margin-top:300px; width: 140px; position: fixed; padding: 1;">2008</button>
+    <div class="modal fade be-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        De tiende editie, van 2008, werd anders samengesteld dan andere jaren. Men kon dat jaar niet stemmen, maar alle stemmen van de afgelopen 9 jaar werden bij elkaar opgeteld. Zo ontstond de lijst voor 2008. Het ging dus niet om de gemiddelde plaatsen op de lijsten van de betreffende jaren, maar om het totaal aantal stemmen.
+        </div>
+      </div>
+    </div>
     <nav class="navbar navbar-inverse navbar-fixed-top" style= "position: center;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="margin-left:250px;">Npo 2 top 2000</a>
+          <a class="navbar-brand" href="top2000.html" style="margin-left:250px;">Npo 2 top 2000</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li class="active"><a href="top2000.html">Home</a></li>
+
             <li><div id="the-basics" style = "margin-left:40px; width: 200px;">
               <input class="typeahead" type="text" placeholder="nummer of artiest">
             </div></li>
@@ -59,11 +80,6 @@
 
 </div>
     <audio id="audioElement" src="rickastley_artists.mp3"></audio>
-    <!-- <div>
-      <div onclick="document.getElementById('audioElement').play()"></div>
-      <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
-      <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
-      <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
-    </div> -->
+
   </body>
 </html>
