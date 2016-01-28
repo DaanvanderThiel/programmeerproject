@@ -1,22 +1,31 @@
-
-colors = ["wheat", "sandyBrown", "seaGreen", "grey", "steelBlue", "YellowGreen", "Teal", "red", "green", "yellow", "purple", "orange", "blue", "Turquoise"]
-d3.hsl
 window.onload = function() {
+  // de functies voor de buttons. Selecteert de nummers waarbij het verwante verschil te zien is
+  window.selecteerNummers = function(){
+      createLine("clickLine", "Mag ik dan bij jou", "Claudia de Breij",true)
+      createLine("clickLine", "Redemption Song","Bob Marley",true)
+  }
+  window.selecteerNummers1999 = function(){
+      createLine("clickLine", "Everybody Hurts", "R.E.M.",true)
+      createLine("clickLine", "Con te partirò","Andrea Bocelli",true)
+  }
+  window.selecteerJohn = function(){
+      createLine("clickLine", "Imagine", "John Lennon",true)
+  }
   //https://github.com/twitter/typeahead.js
-  var DATADICT = []
+  // globale variabelen en arrays
+  var dataDict = []
   var allYear = []
   var nummers2 = []
-  var nummers = [];
-  HEIGHT = 12070
-  WIDTH = 400
-  WIDTHBLOCK = 20
-  HEIGHTBLOCK = 4
-  AFSTANDTUSSENBLOCK = 2
+  var nummers = []
+  height = 12070
+  width = 400
+  widthBlock = 20
+  heightBlock = 4
+  afstandtussenBlock = 2
   breedteBlok = 10
   hoogteBlok = 0.19
-  afstandTussenBlok = 0.04
+  afstandtussenBlok = 0.04
 
-  //console.log(document.getElementById("searchfield").innerHTML)
   // maak div voor de slider
   d3.select("body").append("div").attr("class", "slider").style("position", "fixed").style("top", "100px").style("left", "400px")
   // maak div voor de legenda
@@ -28,22 +37,26 @@ window.onload = function() {
     .append("svg")
     .attr("width", "600")
     .attr("height","50")
+    // groen blok voor de legenda
     legenda.append("rect")
                           .attr("x", 300)
                           .attr("y", 15)
-                          .attr("width", WIDTHBLOCK)
-                          .attr("height", HEIGHTBLOCK)
+                          .attr("width", widthBlock)
+                          .attr("height", heightBlock)
                           .attr("fill","Green");
+    // rood blok voor de legenda
     legenda.append("rect")
                         .attr("x", 10)
                         .attr("y", 15)
-                        .attr("width", WIDTHBLOCK)
-                        .attr("height", HEIGHTBLOCK)
+                        .attr("width", widthBlock)
+                        .attr("height", heightBlock)
                         .attr("fill","red");
+  // text voor de legenda
   legenda.append("text")
                     .text("Nummer kwam het vorige jaar niet voor")
                     .attr("x", 325)
                     .attr("y", 22)
+  // text voor de legenda
   legenda.append("text")
                     .text("Nummer komt het volgende jaar niet terug")
                     .attr("x", 35)
@@ -64,13 +77,12 @@ window.onload = function() {
     .style("stroke", "black")
     .style("fill", "none")
     .style("stroke-width", 1);
-
-  d3.select("body").append("h4").html("beweeg de muis over de rechthoeken voor de artiest en het nummer").attr("class", "p2")
-  d3.select(".p2").style("position", "fixed").style("top", "70px").style("left", "400px")
+  // text voor het gebruik van de site
+  d3.select("body").append("h4").html("beweeg de muis over de rechthoeken voor de artiest en het nummer").attr("class", "p2").style("position", "fixed").style("top", "70px").style("left", "400px")
   // laad de data in
   d3.json("json2000.json", function(data) {
     var data = data.map(function(d) {
-      DATADICT.push({
+      dataDict.push({
         artiest: d[0],
         nummer: d[1],
         jaar: d[2],
@@ -78,18 +90,21 @@ window.onload = function() {
           d[14], d[15], d[16], d[17], d[18], d[19]
         ]
       });
+      // array voor zoekfunctie
       nummerArtiest = d[0] + ":" + d[1]
       nummers2.push(d[0])
       nummers2.push(nummerArtiest)
     });
     //http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array
+    // zorgt voor geen duplicatin in array
     $.each(nummers2, function(i, el){
     if($.inArray(el, nummers) === -1) nummers.push(el);
     });
+    // svg voor hoofd visualisatie
     var svg = d3.select("body")
       .append("svg")
-      .attr("width", WIDTH)
-      .attr("height", HEIGHT)
+      .attr("width", width)
+      .attr("height", height)
       .attr("border", 1)
       .style("postion","relative")
       .attr("transform", "translate(0,55)");
@@ -98,7 +113,7 @@ window.onload = function() {
     for (var i = 0; i < 2000; i++) {
       nummer += 1
       svg.append("text")
-        .attr("y", i * (HEIGHTBLOCK + AFSTANDTUSSENBLOCK) + 10)
+        .attr("y", i * (heightBlock + afstandtussenBlock) + 10)
         .attr("x", "10")
         .attr("class", "positie")
         .attr("font-family", "sans-serif")
@@ -107,36 +122,35 @@ window.onload = function() {
         .text(nummer)
     }
 
-
+    // kijk of n nummeric is
+    //http://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
     function isNumeric(n) {
       return !isNaN(parseFloat(n)) && isFinite(n);
     }
-
-
-      //console.log(DATADICT)
+    // schrijf de data om zodat dit makkelijk doormiddel van d3 ingeladen en gebruikt kan worden
       for (var p = 3; p < 20; p++) {
         for (var z = 0; z < 4094; z++) {
-          if (isNumeric(DATADICT[z].posities[p - 3])) {
+          if (isNumeric(dataDict[z].posities[p - 3])) {
             allYear.push({
               jaartal: 1996 + p,
-              nummer: DATADICT[z].nummer,
-              artiest: DATADICT[z].artiest,
-              positie: DATADICT[z].posities[p - 3]
+              nummer: dataDict[z].nummer,
+              artiest: dataDict[z].artiest,
+              positie: dataDict[z].posities[p - 3]
             })
           }
         }
       }
-      console.log(allYear)
+      // teken alle rechthoeken en zet attributen bijv. mouseover etc.
       var rectangles = svg.selectAll('rect').data(allYear);
       rectangles.enter().append('rect')
         .attr('x', function(d) {
-          return (d.jaartal - 1998) * (WIDTHBLOCK + 2)
+          return (d.jaartal - 1998) * (widthBlock + 2)
         })
         .attr('y', function(d) {
-          return (d.positie * (HEIGHTBLOCK + 2))
+          return (d.positie * (heightBlock + 2))
         })
-        .attr('width', WIDTHBLOCK)
-        .attr('height', HEIGHTBLOCK)
+        .attr('width', widthBlock)
+        .attr('height', heightBlock)
         .attr('fill', function(d) {
           return kleurBlock(d.nummer, d.artiest, d.positie, d.jaartal)
         })
@@ -144,11 +158,11 @@ window.onload = function() {
 
       .on('mouseover', function(d) {
           d3.select(".p2").html(d.artiest + ":" + d.nummer);
-          creatLine("path", d.nummer, d.artiest,false)
+          createLine("path", d.nummer, d.artiest,false)
 
         })
         .on("click", function(d) {
-          creatLine("clickLine", d.nummer, d.artiest,true)
+          createLine("clickLine", d.nummer, d.artiest,true)
         })
         .on("mouseout", function(d) {
           svg.selectAll(".hover").remove();
@@ -159,42 +173,45 @@ window.onload = function() {
         .on("dblclick", function(d) {
           document.getElementById('audioElement').play()
         })
-
-      function creatLine(path, nummer, artiest,tekenKleur) {
-        for (var u = 0; u < DATADICT.length; u++) {
-          if (nummer == undefined ? DATADICT[u].artiest == artiest : (DATADICT[u].nummer == nummer && DATADICT[u].artiest == artiest)) {
+      // maakt de coordinaten die zo makkelijk doorgegeven kunnen worden aan de d3 functie d3.svg.line()
+      window.createLine = function(path, nummer, artiest,tekenKleur) {
+        for (var u = 0; u < dataDict.length; u++) {
+          // als er geen nummer meegegeven word dan is er een artiest meegegeven en moeten alle nummers van die artiest weergeven worden.
+          if (nummer == undefined ? dataDict[u].artiest == artiest : (dataDict[u].nummer == nummer && dataDict[u].artiest == artiest)) {
             if(tekenKleur) {
+              // de kleur word random gegenereerd.
               kleur = d3.rgb(Math.floor((Math.random() * 180) + 20), Math.floor((Math.random() * 180) + 20), Math.floor((Math.random() * 180 + 20)))
-              d3.select(".tabel").append("li").text(DATADICT[u].artiest + ":" + DATADICT[u].nummer).style("color", kleur)
+              d3.select(".tabel").append("li").text(dataDict[u].artiest + ":" + dataDict[u].nummer).style("color", kleur)
             }
             else {
               kleur = "#000000";
             }
             for (var i = 0; i < 17; i++) {
-              if (!isNumeric(DATADICT[u].posities[i]) || i == 0) { // fout sajfewjoiosfdoijf
+              if (!isNumeric(dataDict[u].posities[i]) || i == 0) { // fout sajfewjoiosfdoijf
                 lineData = []
                 lineData2 = []
               }
-              if (isNumeric(DATADICT[u].posities[i])) {
+              if (isNumeric(dataDict[u].posities[i])) {
                 lineData.push({
-                  x: ((i + 1) * (WIDTHBLOCK + AFSTANDTUSSENBLOCK) + WIDTHBLOCK),
-                  y: ((DATADICT[u].posities[i]) * (HEIGHTBLOCK + AFSTANDTUSSENBLOCK) + HEIGHTBLOCK)
+                  x: ((i + 1) * (widthBlock + afstandtussenBlock) + widthBlock),
+                  y: ((dataDict[u].posities[i]) * (heightBlock + afstandtussenBlock) + heightBlock)
                 })
                 lineData2.push({
-                  x: ((i + 1) * (breedteBlok + afstandTussenBlok) + breedteBlok),
-                  y: ((DATADICT[u].posities[i]) * (hoogteBlok + afstandTussenBlok) + hoogteBlok)
+                  x: ((i + 1) * (breedteBlok + afstandtussenBlok) + breedteBlok),
+                  y: ((dataDict[u].posities[i]) * (hoogteBlok + afstandtussenBlok) + hoogteBlok)
                 })
+                // de lijn word zowel in de minimap als in de hoofdvisualisatie gecreeerd
                 tekenLine(path, lineData,20, kleur)
                 tekenLine(path, lineData2, 10, kleur)
               }
                 lineData.push({
-                  x: ((i + 1) * (WIDTHBLOCK + AFSTANDTUSSENBLOCK) + WIDTHBLOCK + AFSTANDTUSSENBLOCK),
-                  y: ((DATADICT[u].posities[i+1]) * (HEIGHTBLOCK + AFSTANDTUSSENBLOCK) + HEIGHTBLOCK)
+                  x: ((i + 1) * (widthBlock + afstandtussenBlock) + widthBlock + afstandtussenBlock),
+                  y: ((dataDict[u].posities[i+1]) * (heightBlock + afstandtussenBlock) + heightBlock)
                 })
-                if (isNumeric(DATADICT[u].posities[i + 1]) && i + 1 < 17) {
+                if (isNumeric(dataDict[u].posities[i + 1]) && i + 1 < 17) {
                   lineData2.push({
-                    x: ((i + 1) * (breedteBlok + afstandTussenBlok) + breedteBlok + afstandTussenBlok),
-                    y: ((DATADICT[u].posities[i + 1]) * (hoogteBlok + afstandTussenBlok) + hoogteBlok)
+                    x: ((i + 1) * (breedteBlok + afstandtussenBlok) + breedteBlok + afstandtussenBlok),
+                    y: ((dataDict[u].posities[i + 1]) * (hoogteBlok + afstandtussenBlok) + hoogteBlok)
                   })
                 tekenLine(path, lineData, 20, kleur)
                 tekenLine(path, lineData2, 10, kleur)
@@ -203,7 +220,7 @@ window.onload = function() {
           }
         }
       }
-
+      // hier word de lijn getekend
       function tekenLine(path, data, breedteBlok, kleur) {
         var line = d3.svg.line()
           .x(function(d) {return d.x;})
@@ -228,35 +245,32 @@ window.onload = function() {
         }
 
       }
-
+      // dit bepaald welke kleur met een blok meegegeven moet worden
       function kleurBlock(nummer, artiest, positie, jaartal) {
         q = jaartal - 1999
-        for (var u = 0; u < DATADICT.length; u++) {
-          if (DATADICT[u].nummer == nummer && DATADICT[u].artiest == artiest) {
-            if (q > 0 && !isNumeric(DATADICT[u].posities[q - 1])) {
+        for (var u = 0; u < dataDict.length; u++) {
+          // als het nummer het vorige jaar nog niet voorkwam dan groen
+          if (dataDict[u].nummer == nummer && dataDict[u].artiest == artiest) {
+            if (q > 0 && !isNumeric(dataDict[u].posities[q - 1])) {
               return "green"
-            } else if (!isNumeric(DATADICT[u].posities[q + 1]) && q != 16) {
+              // als het nummer het volgende jaar niet meer voorkomt dan rood
+            } else if (!isNumeric(dataDict[u].posities[q + 1]) && q != 16) {
               return "red"
+              // anders grijs
             } else {
               return "grey"
             }
           }
         }
       }
-      console.log(allYear, "allyear")
-      console.log(DATADICT, "DATADICT")
-        // maak de minimap
-
-      minimap()
-
-      function minimap() {
+      // maak de minimap aan
         var rectangles = svgslider.selectAll('rect').data(allYear);
         rectangles.enter().append('rect')
           .attr('x', function(d) {
-            return (d.jaartal - 1998) * (breedteBlok + afstandTussenBlok)
+            return (d.jaartal - 1998) * (breedteBlok + afstandtussenBlok)
           })
           .attr('y', function(d) {
-            return (d.positie * (hoogteBlok + afstandTussenBlok))
+            return (d.positie * (hoogteBlok + afstandtussenBlok))
           })
           .attr('width', breedteBlok)
           .attr('height', hoogteBlok)
@@ -301,12 +315,10 @@ window.onload = function() {
 
           data = selection.split(":")
           console.log(data[0], data[1])
-          kleurklik = colors[Math.floor((Math.random() * 7))]
-          creatLine("clickLine", data[1], data[0],true)
+          createLine("clickLine", data[1], data[0],true)
 
         });
-      }
-
+// deze funtie verwijderd alle lijnen/text zodra er op de button gedrukt word leeg lijst
   window.verwijderLijnen = function(){
     svg.selectAll(".clickLine").remove()
     svgslider.selectAll(".clickLine").remove()
@@ -326,11 +338,12 @@ window.onload = function() {
         nummer += 1
         svgjaartal.append("text")
           .attr("y", "7")
-          .attr("x", i * (WIDTHBLOCK + AFSTANDTUSSENBLOCK) + 24)
+          .attr("x", i * (widthBlock + afstandtussenBlock) + 24)
           .attr("class", "positie")
           .attr("font-family", "sans-serif")
           .attr("font-size", "4px")
           .style("fill", "black")
           .text(nummer);
       }
+
 }
