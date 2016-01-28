@@ -12,3 +12,5 @@ Wat vooral lastig is om goed te krijgen is de kleuren aangezien kleuren niet op 
 Voor het story telling aspect had ik eerst een andere pagina in gedachte maar aangezien de visualisatie dan opnieuw moet laden leek me dit niet handig. Daarom heb ik een button aangemaakt die een kleine animatie laat zien waarna er tekst is de visualisatie blijft wel grotendeels zichtbaar. Hierna kan er naast het tekstvlak gedrukt worden zodat de visualisatie volledig zichtbaar en werkend is. 
 
 Gedurende de periode heb ik geprobeerd een zoekfunctie te maken. Dit was uiteindelijk redelijk omslachtig aangezien er al een goede zoekfucntie bestaat en dit makkelijk geimporteerd kan worden... Dus daarom heb ik typeahead gebruikt wat het heel makkelijk maakt om nummers of artiesten te vinden.
+
+Voor het inladen van de dataset heb ik meerdere arrays gebruikt. Ik laad nu dus alles 1 keer in en maak daarna meerdere arrays aan met dezelfde data alleen dan anders gesorteerd.Dit omdat het lastig is om vanuit één array alles in te laden in de standaard d3 functies. Ik was bang dat dit mijn code traag zou maken maar dit maakt achteraf niet heel veel uit.
