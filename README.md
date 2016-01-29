@@ -30,3 +30,8 @@ Deze pagina geeft de nummers met het hoogst aantal punten. Dit is een combinatie
 Eerdere ontwerpen focussen zich alleen op het laten zien van de top 40 van 1 week met doormiddel van kleuren de nieuwe nummers,stijgers of dalers. Dit geeft ook een redelijk duidelijk overzicht maar is saai.
 ## verandering van plannen
 Doordat de data niet goed ingeladen kan worden zal ik mijn gehele project in week 2 moeten veranderen. Doordat ik nog wel iets met een muzieklijst wil doen zal ik nu de top 2000 van de npo2 visueel gaan weergeven. Dit doe ik nu door voor elk jaar een kolom te creeren met rechthoeken waarvan elke rechthoek een  nummer presenteert. De rechthoeken van een nummer worden verbonden met een lijn waardoor het verschil te zien is van een nummer. Een nieuw nummer krijgt de kleur groen en een nummer dat uit de lijst verdwijnt krijgt de kleur rood. Verder zal het nog aangepast moeten worden door een gebied selectie toe te voegen aangezien de nu 32000 (16*2000) rechthoeken toch wel heel veel is om doorheen te gaan. 
+# external code
+http://stackoverflow.com/questions/9229645/remove-duplicates-from-javascript-array
+http://stackoverflow.com/questions/9716468/is-there-any-function-like-isnumeric-in-javascript-to-validate-numbers
+https://github.com/twitter/typeahead.js
+
