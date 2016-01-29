@@ -326,7 +326,7 @@ window.onload = function() {
   }
       });
       // zet alle jaren neer
-      d3.select("body").append("div").attr("class", "jaartal").style("position", "fixed").style("top", "50px").style("left", "5px")
+      d3.select("body").append("div").attr("class", "jaartal").style("position", "fixed").style("top", "50px").style("left", "5px").style("z-index", "1000")
       nummer = 1998
       var svgjaartal = d3.select(".jaartal")
         .append("svg")
